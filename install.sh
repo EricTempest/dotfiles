@@ -8,6 +8,7 @@ cd ~
 mkdir -p .config/nvim
 
 git clone git@github.com:Wobrav/dotfiles.git
+mkdir ~/.config/nvim/bundle
 cd ~/.config/nvim/bundle
 git clone https://github.com/scrooloose/nerdtree
 git clone https://github.com/scrooloose/syntastic
