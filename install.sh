@@ -10,7 +10,7 @@ mkdir -p .config/nvim
 git clone git@github.com:Wobrav/dotfiles.git
 mv dotfiles/autoload ~/.config/nvim
 mv dotfiles/colors ~/.config/nvim
-mv dotfiles/vimrc ~/.config/nvim init.vim
+mv dotfiles/vimrc ~/.config/nvim/init.vim
 mkdir ~/.config/nvim/bundle
 cd ~/.config/nvim/bundle
 git clone https://github.com/scrooloose/nerdtree
