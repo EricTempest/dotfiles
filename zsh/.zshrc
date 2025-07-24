@@ -1,3 +1,5 @@
+# Tracked zshrc begins. If duplicate, delete all but the last
+
 export HOMEBREW_BUNDLE_FILE="~/dotfiles/brew/Brewfile";
 export HOMEBREW_PREFIX="/opt/homebrew";
 export HOMEBREW_CELLAR="/opt/homebrew/Cellar";
@@ -7,3 +9,4 @@ PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/
 [ -z "${MANPATH-}" ] || export MANPATH=":${MANPATH#:}";
 export INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}";
 
+# End tracked zshrc

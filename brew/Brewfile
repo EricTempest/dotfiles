@@ -1,3 +1,8 @@
 brew "stow"
 brew "neovim"
 brew "fzf"
+brew "tmux"
+brew "tmuxinator"
+brew "tmuxinator-completion"
+cask "visual-studio-code"
+cask "librewolf"
