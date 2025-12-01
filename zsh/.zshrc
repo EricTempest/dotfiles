@@ -9,4 +9,19 @@ PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/
 [ -z "${MANPATH-}" ] || export MANPATH=":${MANPATH#:}";
 export INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}";
 
+set -o vi
+
+alias cdc="cd ~/Code"
+alias ts="tmuxinator start"
+alias te="tmuxinator edit"
+alias tks="tmux kill-server"
+
+eval "$(direnv hook zsh)"
+
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - zsh)"
+
+bindkey "^R" history-incremental-search-backward
+
 # End tracked zshrc
