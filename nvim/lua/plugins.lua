@@ -13,7 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 -- Plugin specifications
 local plugins = {
     -- Colorscheme
-    { 'folke/tokyonight.nvim', lazy = false, priority = 1000 },
+    { 'rebelot/kanagawa.nvim', lazy = false, priority = 1000 },
 
     -- Telescope (fuzzy finder)
     {

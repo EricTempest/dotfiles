@@ -8,6 +8,12 @@ vim.api.nvim_create_autocmd(
   pattern={"qf"},
   command=[[nnoremap <buffer> <CR> <CR>:cclose<CR>]]})
 
+-- keep quickfix open on shift+enter --
+vim.api.nvim_create_autocmd(
+  "FileType", {
+  pattern={"qf"},
+  command=[[nnoremap <buffer> <S-CR> <CR>]]})
+
 -- Basic options
 vim.opt.number = true
 vim.opt.relativenumber = true
@@ -58,14 +64,12 @@ local function safe_require(module)
 end
 
 -- Colorscheme
-local tokyonight = safe_require('tokyonight')
-if tokyonight then
-    tokyonight.setup({
-        style = 'night',
-        transparent = false,
-        terminal_colors = true,
+local kanagawa = safe_require('kanagawa')
+if kanagawa then
+    kanagawa.setup({
+        theme = 'dragon',
     })
-    vim.cmd([[colorscheme tokyonight]])
+    vim.cmd([[colorscheme kanagawa]])
 end
 
 -- Load configs (after plugins)
