@@ -51,7 +51,7 @@ require('plugins')
 local function safe_require(module)
     local ok, result = pcall(require, module)
     if not ok then
-        vim.notify('Module ' .. module .. ' not found. Run :PackerSync', vim.log.levels.WARN)
+        vim.notify('Module ' .. module .. ' not found. Run :Lazy sync', vim.log.levels.WARN)
         return nil
     end
     return result
