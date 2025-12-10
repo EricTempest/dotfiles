@@ -2,12 +2,6 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
--- close quickfix on enter --
-vim.api.nvim_create_autocmd(
-  "FileType", {
-  pattern={"qf"},
-  command=[[nnoremap <buffer> <CR> <CR>:cclose<CR>]]})
-
 -- Basic options
 vim.opt.number = true
 vim.opt.relativenumber = true
